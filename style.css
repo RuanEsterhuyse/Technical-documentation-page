@@ -20,6 +20,7 @@ nav a {
   display: block;
   padding: 15px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 nav ul {
@@ -38,6 +39,7 @@ main {
   flex: 1;
   height: 100vh;
   overflow-y: scroll;
+  margin-left: 30px;
 }
 header {
   font-size: 30px;
@@ -50,10 +52,17 @@ section {
 code {
   display: block;
   text-align: left;
-  background-color: lightsteelblue;
-  padding: 20spx;
+  background-color: #eee;
+  padding: 20px;
   margin: 20px;
   border-radius: 1px;
   margin-left: 20px;
   min-width: 230px;
+  border-left: 5px solid #0c4271;
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: 25px;
+  }
 }

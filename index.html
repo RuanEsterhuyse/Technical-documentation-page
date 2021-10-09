@@ -12,7 +12,7 @@
     
 
 <nav id="navbar">
-    <header class ="headerone">Angular</header>
+    <header>Angular</header>
     <ul>
 <li><a href="#Introduction" class="nav-link">Introduction</a></li>
 <li><a href="#Prerequisites" class="nav-link">Prerequisites</a></li>
@@ -63,11 +63,11 @@
     <p>You can use the Angular CLI to run commands in your terminal for generating, building, testing, and deploying Angular applications. To install the Angular CLI, run the following command in your terminal:</p>
 
     
-    <code>npm install -g @angular/cli</code>
+    <pre><code>npm install -g @angular/cli</code></pre>
 
     <p>Angular CLI commands all start with ng, followed by what you'd like the CLI to do. In the Desktop directory, use the following ng new command to create a new application called todo:</p>
 
-    <code>ng new todo --routing=false --style=css</code>
+    <pre><code>ng new todo --routing=false --style=css</code></pre>
 
     <p>The ng new command creates a minimal starter Angular application on your Desktop. The additional flags, --routing and --style, define how to handle navigation and styles in the application. This tutorial describes these features later in more detail.</p>
 
@@ -75,11 +75,11 @@
 
     <p>Navigate into your new project with the following cd command:</p>
 
-    <code>cd todo</code>
+    <pre><code>cd todo</code></pre>
   
     <p>To run your todo application, use ng serve:</p>
 
-    <code>ng serve</code>
+    <pre><code>ng serve</code></pre>
 
     <p>When the CLI prompts you about analytics, answer no.</p>
 
@@ -113,7 +113,7 @@
 
 
 <section class="main-section" id="The_structure_of_an_Angular_application">
-    <header>The_structure_of_an_Angular_application</header>
+    <header>The structure of an Angular sapplication</header>
     <p>Angular is built with TypeScript. TypeScript is a superset of JavaScript meaning that any valid JavaScript is valid TypeScript. TypeScript offers typing and a more concise syntax than plain JavaScript, which gives you a tool for creating more maintainable code and minimizing bugs.
 
        <p> Components are the building blocks of an Angular application. A component includes a TypeScript class that has a @Component() decorator, an HTML template, and styles.</p>
@@ -121,18 +121,18 @@
 
 <p>The class is where you put any logic your component needs. This code can include functions, event listeners, properties, and references to services to name a few. The class is in a file with a name such as feature.component.ts, where feature is the name of your component. So, you could have files with names such as header.component.ts, signup.component.ts, or feed.component.ts. You create a component with a @Component() decorator that has metadata that tells Angular where to find the HTML and CSS. A typical component is as follows:</p>
 
-<code>import { Component } from '@angular/core';<br>
+<pre><code>import { Component } from '@angular/core';
 
-    @Component({<br>
-      selector: 'app-item',<br>
-        // the following metadata specifies the location of the other parts of the component<br>
-      templateUrl: './item.component.html',<br>
-      styleUrls: ['./item.component.css']<br>
+    @Component({
+      selector: 'app-item',
+        // the following metadata specifies the location of the other parts of the component
+      templateUrl: './item.component.html',
+      styleUrls: ['./item.component.css']
     })
     
-    export class ItemComponent {<br>
+    export class ItemComponent {
     // your code goes here
-    }</code>
+    }</code></pre>
 
     <p>This component is called ItemComponent, and its selector is app-item. You use a selector just like regular HTML tags by placing it within other templates. When a selector is in a template, the browser renders the template of that component. This tutorial guides you through creating two components and using one within the other.</p>
 
