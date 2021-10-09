@@ -4,12 +4,13 @@
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
 
 nav {
   background-color: #eee;
-  max-width: 250px;
+  width: 300px;
   height: 100vh;
   border-right: 2px solid #777;
 }
@@ -35,7 +36,6 @@ nav header {
 }
 
 main {
-  /* background-color:  */
   flex: 1;
   height: 100vh;
   overflow-y: scroll;
@@ -61,8 +61,32 @@ code {
   border-left: 5px solid #0c4271;
 }
 
-@media only screen and (max-width: 400px) {
-  #main-doc {
-    margin-left: 25px;
+#navbar li:hover {
+  background: #ff2626;
+}
+
+#navbar a:hover {
+  color: #ffe6e6;
+}
+
+pre {
+  padding-top: 15px;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+  nav {
+    border-right: none;
+    border-bottom: 2px solid #777;
+    height: 200px;
+    overflow-y: scroll;
+    width: 100%;
   }
 }
+
+/* main {
+  height: auto;
+  width: 100%;
+} */
