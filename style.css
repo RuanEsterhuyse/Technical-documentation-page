@@ -1,22 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 body {
-  font-family: Special Elite, sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   margin: 0;
 }
 
 nav {
-  background-color: blue;
+  background-color: #eee;
   max-width: 250px;
   height: 100vh;
+  border-right: 2px solid #777;
+}
+
+nav a {
+  border-top: 2px solid #777;
+  color: #000;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  height: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+nav header {
+  padding: 15px;
 }
 
 main {
-  background-color: blueviolet;
+  /* background-color:  */
   flex: 1;
+  height: 100vh;
+  overflow-y: scroll;
 }
 header {
   font-size: 30px;
-  padding: 20px;
+}
+
+section {
+  padding: 10px;
+  line-height: 2;
+}
+code {
+  display: block;
+  text-align: left;
+  background-color: lightsteelblue;
+  padding: 20spx;
+  margin: 20px;
+  border-radius: 1px;
+  margin-left: 20px;
+  min-width: 230px;
 }
